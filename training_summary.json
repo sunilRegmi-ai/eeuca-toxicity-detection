@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-03-06 15:02:58",
+  "device": "cuda",
+  "gpus": 2,
+  "models_trained": [
+    "mmbert"
+  ],
+  "best_model": "mmbert",
+  "best_f1_macro": 0.6788790889504108,
+  "config": {
+    "max_length": 64,
+    "batch_size": 32,
+    "epochs": 30,
+    "learning_rate": 2e-05
+  }
+}

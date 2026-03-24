@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv
+
+# PyTorch models
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Output / Data
+# Uncomment `data/` if you want to completely ignore data, currently ignoring specific output files instead
+# data/
+predictions.csv
+predictions.zip
+*submissions*.csv
+
+# IDEs / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store

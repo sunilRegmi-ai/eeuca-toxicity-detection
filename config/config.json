@@ -1,0 +1,35 @@
+{
+    "data": {
+        "train_text": "data/train/train_index_text.csv",
+        "train_label": "data/train/train_index_label.csv",
+        "val_text": "data/val/val_index_text.csv",
+        "val_label": "data/val/val_index_label.csv",
+        "test_text": "data/test_index_text.csv",
+        "augmented_train_text": "data/augmented/train_index_text.csv",
+        "augmented_train_label": "data/augmented/train_index_label.csv",
+        "use_augmented": true
+    },
+    "models": {
+        // "xlm-roberta": "xlm-roberta-base",
+        // "m-bert": "bert-base-multilingual-cased",
+        // "m-distilbert": "distilbert-base-multilingual-cased",
+        // "m-deberta": "microsoft/mdeberta-v3-base"
+    },
+    "training": {
+        "max_length": 32,
+        "batch_size": 8,
+        "epochs": 10,
+        "learning_rate": 2e-5,
+        "weight_decay": 0.01,
+        "early_stopping_patience": 3,
+        "num_classes": 6
+    },
+    "labels": {
+        "0": "Non-toxic",
+        "1": "Insults and Flaming",
+        "2": "Other Offensive Texts",
+        "3": "Hate and Harassment",
+        "4": "Threats",
+        "5": "Extremism"
+    }
+}
