@@ -6,9 +6,6 @@ data:
   test_text: "data/test_index_text.csv"
   train_text: "data/train/train_index_text.csv"
   train_label: "data/train/train_index_label.csv"
-  # Augmented data paths (CONDA dataset)
-  augmented_train_text: "data/augmented/train_index_text.csv"
-  augmented_train_label: "data/augmented/train_index_label.csv"
   
   # Set to true to use the larger augmented dataset
   use_augmented: false
@@ -24,14 +21,14 @@ data:
 # Models to train
 # Comment out models you don't want to train
 models:
-  # xlm-roberta: "xlm-roberta-base"
-  # m-bert: "bert-base-multilingual-uncased"
+  xlm-roberta: "xlm-roberta-base"
+  m-bert: "bert-base-multilingual-uncased"
   # Base text classification model
-  # deberta: "microsoft/deberta-v3-base"
+  deberta: "microsoft/deberta-v3-base"
   mmbert: "jhu-clsp/mmBERT-base" # or jhu-clsp/mmBERT-small"
-  # m-distilbert: "distilbert-base-multilingual-cased"
-  # m-deberta: "microsoft/mdeberta-v3-base"
-  # toxic-xlm-roberta: "unitary/multilingual-toxic-xlm-roberta"
+  m-distilbert: "distilbert-base-multilingual-cased"
+  m-deberta: "microsoft/mdeberta-v3-base"
+  toxic-xlm-roberta: "unitary/multilingual-toxic-xlm-roberta"
 
 # Training hyperparameters
 training:
