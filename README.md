@@ -20,13 +20,13 @@ The `train_multilingual.py` script leverages the Hugging Face `Trainer` API to f
 
 The following section summarizes the peak results of the trained models, extracted directly from `multilingual_results.csv`. The pipeline automatically calculated test data metrics for macro accuracy and F1 scores under the given hyperparameters.
 
-| Model Alias          | Base Model Path                          | Test F1 (Macro) | Test Accuracy | Learning Rate | Batch Size / Seq Len | 
-|----------------------|------------------------------------------|-----------------|---------------|---------------|----------------------|
-| **mmbert**           | `jhu-clsp/mmBERT-base`                   | **0.4282**      | **0.8634**    | `1e-05`       | 64 / 32              |
-| **m-bert**           | `bert-base-multilingual-uncased`         | 0.4239          | 0.8305        | `3e-06`       | 32 / 64              |
-| **xlm-roberta**      | `xlm-roberta-base`                       | 0.3839          | 0.8130        | `3e-06`       | 32 / 64              |
-| **m-distilbert**     | `distilbert-base-multilingual-cased`     | 0.3578          | 0.7942        | `3e-06`       | 32 / 64              |
-| **toxic-xlm-roberta**| `unitary/multilingual-toxic-xlm-roberta` | 0.3520          | 0.8281        | `3e-06`       | 32 / 64              |
+| Model Alias          | Base Model Path                          | Val F1 (Macro) | Test F1 (Macro) | Test Accuracy | Learning Rate | Batch Size / Seq Len | 
+|----------------------|------------------------------------------|----------------|-----------------|---------------|---------------|----------------------|
+| **mmbert**           | `jhu-clsp/mmBERT-base`                   | **0.5882**     | **0.4282**      | **0.8634**    | `1e-05`       | 64 / 32              |
+| **m-bert**           | `bert-base-multilingual-uncased`         | 0.4064         | 0.4239          | 0.8305        | `3e-06`       | 32 / 64              |
+| **xlm-roberta**      | `xlm-roberta-base`                       | 0.3830         | 0.3839          | 0.8130        | `3e-06`       | 32 / 64              |
+| **m-distilbert**     | `distilbert-base-multilingual-cased`     | 0.3907         | 0.3578          | 0.7942        | `3e-06`       | 32 / 64              |
+| **toxic-xlm-roberta**| `unitary/multilingual-toxic-xlm-roberta` | 0.3558         | 0.3520          | 0.8281        | `3e-06`       | 32 / 64              |
 
 *(Note: Data derived from the highest F1 run per model variant. Parameters like `m-bert` and `xlm-roberta` were initially run using older parameters (`LR=3e-06, BS=32, MAX_LEN=64`) before being upgraded in later `mmBERT` runs)*
 
