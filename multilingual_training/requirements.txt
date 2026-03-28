@@ -1,0 +1,10 @@
+transformers
+datasets
+accelerate
+pandas
+scikit-learn
+tqdm
+torch
+safetensors
+sentencepiece
+PyYAML
